@@ -1,0 +1,38 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Hi, I'm Diego</h1>
+			<p>
+				Welcome to my blog. This blog contains a lot of information that I find interesting.
+			</p>
+			<p>
+				I really like software development in both frontend and backend. I also find operating systems very interesting. In my free time I spend testing many Linux distributions and learning commands. Another field that I like a lot is the automation of processes, even if they are very simple, it is a lot of fun to automate them. And lately with all the technological advances in artificial intelligence has also become one of my facinations.
+			</p>
+			<p>Alguno de mis conocimientos son los siguientes:</p>
+			<ul>
+				<li>JavaScript</li>
+				<li>React JS</li>
+				<li>Vue JS</li>
+				<li>Deno</li>
+				<li>Java</li>
+				<li>C#</li>
+				<li>Linux</li>
+				<li>Docker</li>
+			</ul>
+			<p>Espero encuentres la informacion interesante, Happy Hacking</p>
+		</main>
+		<Footer />
+	</body>
+</html>
